@@ -1,0 +1,10 @@
+# PyCharm
+.idea
+
+# Data files
+*.csv
+*.xlsx
+*.h5
+
+# Test file
+test.py
