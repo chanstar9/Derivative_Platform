@@ -13,7 +13,7 @@ start = '1960-01-01'
 end = '2200-12-31'
 df_chgdp = ek.get_timeseries(['aCNGDP'], start_date=start, end_date=end, interval='quarterly')
 df_chequity = ek.get_timeseries(['.SSEC'], start_date=start, end_date=end, interval='monthly')
-df_usgdp = ek.get_timeseries(['aUSGDP/A'], start_date='1950-05-01', end_date=end, interval='quarterly')
+df_usgdp = ek.get_timeseries(['aUSGDP/A'], start_date=start, end_date=end, interval='quarterly')
 df_usequity = ek.get_timeseries(['.NYA'], start_date=start, end_date=end, interval='monthly')
 df_krgdp = ek.get_timeseries(['aKRCGDPA'], start_date=start, end_date=end, interval='quarterly')
 df_krequity = ek.get_timeseries(['.KS11'], start_date=start, end_date=end, interval='monthly')
