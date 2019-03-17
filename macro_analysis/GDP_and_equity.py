@@ -5,7 +5,8 @@ import statsmodels.api as sm
 from statsmodels.tsa.api import VAR, DynamicVAR
 import matplotlib.pyplot as plt
 
-ek.set_app_key('030b4f0bb2264404800fcf6743715940204d53a2')
+app_key = pd.read_csv('get_data/app_key.csv')
+ek.set_app_key(app_key['app_key'][0])
 
 # get data
 start = '1960-01-01'
