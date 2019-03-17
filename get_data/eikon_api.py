@@ -5,7 +5,8 @@ import cufflinks as cf
 import configparser as cp
 
 # API key로 eikon API접속
-ek.set_app_key('030b4f0bb2264404800fcf6743715940204d53a2')
+app_key = pd.read_csv('get_data/app_key.csv')
+ek.set_app_key(app_key['app_key'][0])
 
 # RIC: reuters instrument code, Data item browser에서 검색하여 찾는다.
 rics = [
