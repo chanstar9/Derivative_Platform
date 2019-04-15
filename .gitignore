@@ -4,6 +4,7 @@
 # Data files
 *.csv
 *.xlsx
+*.xls
 *.h5
 
 # Test file
