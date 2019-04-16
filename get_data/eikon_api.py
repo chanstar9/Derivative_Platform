@@ -70,6 +70,8 @@ sp = ek.get_data('0#.SPX', fields=['TR.CommonName', 'TR.PriceClose', 'TR.Volume'
 # ek.get_news_headlines(): retrieve news headlines
 # ek.get_news_story(): retrieve full news texts
 
+# TR_field
+a = ek.TR_Field(field_name='TR.GrossProfit', params={'Scale': 6, 'Curn': 'EUR'}, sort_dir='asc', sort_priority=0)
 
 
 # ETF data

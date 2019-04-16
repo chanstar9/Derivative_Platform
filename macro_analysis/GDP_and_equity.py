@@ -72,3 +72,5 @@ compare.columns = ['us', 'ch', 'kr']
 compare = compare.dropna()
 compare.plot()
 plt.show()
+
+# 결론

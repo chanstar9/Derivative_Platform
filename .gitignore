@@ -4,7 +4,12 @@
 # Data files
 *.csv
 *.xlsx
+*.xls
 *.h5
+*.txt
 
 # Test file
 test.py
+
+# Picture
+*.png
