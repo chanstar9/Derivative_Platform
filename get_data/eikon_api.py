@@ -15,12 +15,15 @@ rics = [
     '.SPX',  # S&P 500 index
     '.VIX',  # VIX volatility
     'EUR=',  # EUR/USD exchange rate
-    'XAU='  # Gold
+    'XAU=',  # Gold
     'DE10YT=RR'  # 10yr Germany Bond
 ]
 
 # get time series data
 ts = ek.get_timeseries('AAPL.O', start_date='2019-01-01')
+
+# get US 10Year Note yield
+US10YNoteYTM = ek.get_timeseries('US10YT=RR', start_date='1980-01-01', interval='monthly')
 
 # get news headline, date_to를 기준으로 하루치만 가능
 nh = ek.get_news_headlines('R:AAPL.O', date_from='2018-01-01', date_to='2018-01-31')
