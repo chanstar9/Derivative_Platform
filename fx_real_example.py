@@ -68,7 +68,7 @@ if __name__ == '__main__':
     for x in c_list:
         # d["FFX{0}".format(x)] = FFX_data_stream(xing, x, True, ffx_conn)
         d["FFX{0}".format(x)] = FFX_data_stream(xing, x, True,
-                                                sqlite3.connect("\xingDB\stream_FFX_{0}.db".format(x), check_same_thread=False))
+                                                sqlite3.connect("xingDB/stream_FFX_{0}.db".format(x), check_same_thread=False))
 
     # Log 에만 찍는 경우
     d = {}
