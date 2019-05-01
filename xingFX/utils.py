@@ -39,11 +39,11 @@ class kfx_calendar:
                              day.weekday() == calendar.MONDAY and \
                              day.month == month]
 
-        prev_mat_thurs = [day for week in monthcal for day in week if \
+        prev_mat_month = [day for week in monthcal for day in week if \
                              day.weekday() == calendar.MONDAY and \
                              day.month == month]
 
-        return prev_mat_thurs
+        return prev_mat_month
 
     def prev_mat_week_monday(self):
         mat_mon_list = self.mat_month()
@@ -59,6 +59,9 @@ class kfx_calendar:
         mat_mon_list = self.mat_month()
         mat_week_friday = int(mat_mon_list[1].strftime("%Y%m%d"))+1
         return mat_week_friday
+
+    def fst_mon(self):
+        return self.prev_mat_week_monday()
 
 #Todo 조건에 따라 선옵 코드 return
 class code_maker:
