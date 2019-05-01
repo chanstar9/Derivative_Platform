@@ -53,9 +53,9 @@ class KFX_sql:
             codes_df = codes_df.shcode
 
         if is_option==False:
-            conn = sqlite3.connect("{0}//KFX_{1}min_db.db".format(self.db_folder_dir,target_minute))
+            conn = sqlite3.connect("{0}/KFX_{1}min_db.db".format(self.db_folder_dir,target_minute))
         else:
-            conn = sqlite3.connect("{0}//KFXo_{1}min_db.db".format(self.db_folder_dir,target_minute))
+            conn = sqlite3.connect("{0}/KFXo_{1}min_db.db".format(self.db_folder_dir,target_minute))
 
         if sdate is None:
             sdate = self.fst_mon
@@ -196,9 +196,9 @@ class KFX_sql:
             codes_df = codes_df.shcode
 
         if is_option == False:
-            conn = sqlite3.connect("{0}//KFX_{1}tick_db.db".format(self.db_folder_dir, target_tick))
+            conn = sqlite3.connect("{0}/KFX_{1}tick_db.db".format(self.db_folder_dir, target_tick))
         else:
-            conn = sqlite3.connect("{0}//KFXo_{1}tick_db.db".format(self.db_folder_dir, target_tick))
+            conn = sqlite3.connect("{0}/KFXo_{1}tick_db.db".format(self.db_folder_dir, target_tick))
         #conn = sqlite3.connect("xing//KFX_{0}tick_db.db".format(target_tick))
 
         if sdate is None:
@@ -327,9 +327,9 @@ class KFX_sql:
             codes_df = codes_df.shcode
 
         if is_option == False:
-            conn = sqlite3.connect("xingDB//KFX_1Day_db.db")
+            conn = sqlite3.connect("{0}/KFX_1Day_db.db".format(self.db_folder_dir))
         else:
-            conn = sqlite3.connect("xingDB//KFXo_1Day_db.db")
+            conn = sqlite3.connect("{0}/KFXo_1Day_db.db".format(self.db_folder_dir))
 
         if sdate is None:
             sdate = self.fst_mon

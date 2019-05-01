@@ -7,6 +7,8 @@
 *.xls
 *.h5
 *.txt
+*.log
+*.db
 
 # Test file
 test.py

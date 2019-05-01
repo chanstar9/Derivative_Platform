@@ -22,7 +22,7 @@ if __name__ == '__main__':
     # 4. 로거 인스턴스로 로그를 찍는다.
     logger.setLevel(logging.DEBUG)
 
-    xing = Xing("demo.ebestsec.co.kr", 20001, 1, 0, "id", "pwd", "", logger=logging.getLogger('mylogger'))
+    xing = Xing("demo.ebestsec.co.kr", 20001, 1, 0, "", "", "", logger=logging.getLogger('mylogger'))
 
     xing.open_manual()
 
@@ -31,7 +31,7 @@ if __name__ == '__main__':
 
     #코드 받아오기
     kfx_code = kfx_tr.get_kfx_codes()
-    target_codes = kfx_code.iloc[:3]
+    target_codes = kfx_code.shcode.iloc[:3]
 
     #데이터 베이스 저장 실행
     kfx_tosql.KFX_min_sql(30,target_codes,20190401)

@@ -60,7 +60,7 @@ class kfx_calendar:
         mat_week_friday = int(mat_mon_list[1].strftime("%Y%m%d"))+1
         return mat_week_friday
 
-    def fst_mon(self):
+    def fst_monday(self):
         return self.prev_mat_week_monday()
 
 #Todo 조건에 따라 선옵 코드 return
