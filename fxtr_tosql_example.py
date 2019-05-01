@@ -22,7 +22,7 @@ if __name__ == '__main__':
     # 4. 로거 인스턴스로 로그를 찍는다.
     logger.setLevel(logging.DEBUG)
 
-    xing = Xing("demo.ebestsec.co.kr", 20001, 1, 0, "", "", "", logger=logging.getLogger('mylogger'))
+    xing = Xing("demo.ebestsec.co.kr", 20001, 1, 0, "id", "pwd", "", logger=logging.getLogger('mylogger'))
 
     xing.open_manual()
 
