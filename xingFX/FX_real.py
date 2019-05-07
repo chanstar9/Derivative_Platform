@@ -59,7 +59,7 @@ class KFX_data_stream:
     def flush_queue(self, q):
 
         while q.qsize() > 100:
-            q.clear()
+            q.queue.clear()
 
     def start_sub(self):
         try:
@@ -170,7 +170,7 @@ class Kopt_data_stream:
     def flush_queue(self,q):
 
         while q.qsize()>100:
-            q.clear()
+            q.queue.clear()
 
 
     def start_sub(self):
@@ -285,7 +285,7 @@ class FFX_data_stream:
     def flush_queue(self,q):
 
         while q.qsize()>100:
-            q.clear()
+            q.queue.clear()
 
     def start_sub(self):
         try:
